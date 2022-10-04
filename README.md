@@ -2,17 +2,18 @@
 
 ## Overview
 
-This project scrapes, and writes IMDB's Top 250 Movies to SQLite3 database
+This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/chart/top/) to SQLite3 database
 
 
 
 ## Requirements
 
-| Required      | Version | Purpose                                    |
-|---------------|---------|--------------------------------------------|
-| Python        | 3.0 +   | Primary Programming Language               | 
-| requests-html | 0.3.4   | For making HTTP requests, and parsing HTML | 
-
+| Required       | Version | Purpose                                  |
+|----------------|---------|------------------------------------------|
+| Python         | 3.0 +   | Primary Programming Language             | 
+| requests       | 0.3.4   | For making HTTP requests                 | 
+| Beautifulsoup4 | 4.0     | For parsing HTML                         | 
+| sqlite3        | 2.0     | Lightweight database for storing results | 
 
 
 ## Source Code 
@@ -21,7 +22,7 @@ This project scrapes, and writes IMDB's Top 250 Movies to SQLite3 database
 <summary> View Source code </summary>
 
 ```python
-
+ 
 print("Hello World!")
 
 ```
