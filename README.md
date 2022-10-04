@@ -2,23 +2,23 @@
 
 ## Overview
 
-This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/chart/top/) to SQLite3 database
+This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/chart/top/) to SQLite3 database.
 
 
 
 ## Requirements
 
-| Required       | Version  | Purpose                                  |
-|----------------|----------|------------------------------------------|
-| Python         | 3.10.1   | Primary Programming Language             | 
-| requests       | 0.3.4    | A simple, yet elegant, HTTP library      | 
-| Beautifulsoup4 | 4.0      | HTML/XMl processing library              | 
-| sqlite3        | 2.0      | Lightweight database for storing results | 
+| Required         | Version | Purpose                                  |
+|------------------|---------|------------------------------------------|
+| `Python`         | 3.10.1  | Primary Programming Language             | 
+| `requests`       | 0.3.4   | A simple, yet elegant, HTTP library      | 
+| `beautifulsoup4` | 4.0     | HTML/XMl processing library              | 
+| `sqlite3`        | 2.0     | Lightweight database for storing results | 
 
 
 ## Setup Instructions 
 
-A step-by-step instructions on how to create a virtual environment using `Pipenv`.
+Instructions on how to create a `pipenv` virtual environment.
 
 
 <details>
