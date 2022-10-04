@@ -19,7 +19,7 @@ This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/ch
 ## View Source Code 
 
 <details>
-<summary> View Source code </summary>
+<summary> Click </summary>
 
 ```python
  import logging
