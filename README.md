@@ -8,22 +8,21 @@ This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/ch
 
 ## Requirements
 
-| Required       | Version | Purpose                                  |
-|----------------|---------|------------------------------------------|
-| Python         | 3.0 +   | Primary Programming Language             | 
-| requests       | 0.3.4   | For making HTTP requests                 | 
-| Beautifulsoup4 | 4.0     | For parsing HTML                         | 
-| sqlite3        | 2.0     | Lightweight database for storing results | 
+| Required       | Version  | Purpose                                  |
+|----------------|----------|------------------------------------------|
+| Python         | 3.10.1   | Primary Programming Language             | 
+| requests       | 0.3.4    | A simple, yet elegant, HTTP library      | 
+| Beautifulsoup4 | 4.0      | HTML/XMl processing library              | 
+| sqlite3        | 2.0      | Lightweight database for storing results | 
 
 
-## Source Code 
+## View Source Code 
 
 <details>
 <summary> View Source code </summary>
 
 ```python
- 
-import logging
+ import logging
 import sqlite3
 import app_functions as app
 
@@ -48,26 +47,21 @@ def main():
 
     app.view_database(conn)
 
-    # app.display_by_rating(conn, 9)
-    # app.display_by_rating(conn, 8)
-
-
 if __name__ == '__main__':
     main()
 
 ```
-
 
 </details>
 
 
 ## Setup Instructions 
 
-A step-by-step instructions on how to set up a `pipenv` virtual environment.
+A step-by-step instructions on how to create a virtual environment using `Pipenv`.
 
 
 <details>
-<summary>Create a Virtual Environment using Pipenv </summary>
+<summary>Click </summary>
 
 1. Download [zip file](https://github.com/seraph776/imdb-top-250-movies/archive/refs/heads/main.zip) 
 2. Extract zip files
@@ -90,14 +84,9 @@ $ pipenv run python main.py
 ```
 
 
-
 ℹ️ [Reference](https://docs.python-guide.org/dev/virtualenvs/).
 
 </details>
-
-
-
-
 
 
 
