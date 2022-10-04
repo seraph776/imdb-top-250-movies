@@ -4,7 +4,6 @@ created: 2022-10-04
 @author: seraph★776
 contact: admin@codecrypt76.com
 project: IMDB Top 250
-metadoc: Config file
 """
 
 import requests
