@@ -75,6 +75,6 @@ $ pipenv run python main.py
 
 ## License 
 
-[MIT](https://github.com/seraph776/imdb-top-250-movies/blob/main/LICENSE) © [Seraphgit ](https://github.com/seraph776) 
+[MIT](https://github.com/seraph776/imdb-top-250-movies/blob/main/LICENSE) © [Seraph](https://github.com/seraph776) 
 
 
