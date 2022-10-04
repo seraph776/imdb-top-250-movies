@@ -22,7 +22,7 @@ This project scrapes, and writes [IMDB's Top 250 Movies](https://www.imdb.com/ch
 <summary> Click </summary>
 
 ```python
- import logging
+import logging
 import sqlite3
 import app_functions as app
 
