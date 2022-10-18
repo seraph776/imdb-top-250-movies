@@ -5,7 +5,6 @@ created: 2022-10-04
 contact: admin@codecrypt76.com
 project: IMDB Top 250
 """
-
 import requests
 from bs4 import BeautifulSoup
 
@@ -22,9 +21,9 @@ def create_table(connection):
     connection.cursor().execute(sql)
 
 
-def save_data(connection, data):
+def save_scraped_data(connection, data):
     sql = "INSERT INTO top250movies (rank, title, releaseDate, rating) VALUES (?,?,?,?);"
-    connection.cursor().execute(sql, data)
+    connection.cursor().executemany(sql, data)
     connection.commit()
 
 
@@ -47,3 +46,14 @@ def display_by_rating(connection, rating):
     sql = f"SELECT * FROM top250movies WHERE rating = {rating};"
     for row in connection.cursor().execute(sql):
         print(row)
+
+
+def scrape_site(response):
+    records = []
+    table_rows = response.find('tbody', attrs={'class': 'lister-list'}).find_all('tr')
+    for rank, movie in enumerate(table_rows, start=1):
+        title = movie.find('td', attrs={'class': 'titleColumn'}).a.text
+        release_date = movie.find('span', attrs={'class': 'secondaryInfo'}).text.strip("()")
+        rating = float(movie.find('td', attrs={'class': 'ratingColumn imdbRating'}).strong.text)
+        records.append((rank, title, release_date, rating))
+    return records
