@@ -21,12 +21,6 @@ def create_table(connection):
     connection.cursor().execute(sql)
 
 
-def save_scraped_data(connection, data):
-    sql = "INSERT INTO top250movies (rank, title, releaseDate, rating) VALUES (?,?,?,?);"
-    connection.cursor().executemany(sql, data)
-    connection.commit()
-
-
 def view_database(connection):
     sql = 'SELECT * FROM top250movies'
     for row in connection.cursor().execute(sql):
@@ -42,12 +36,6 @@ def get_page(url):
     return BeautifulSoup(source.content, 'lxml')
 
 
-def display_by_rating(connection, rating):
-    sql = f"SELECT * FROM top250movies WHERE rating = {rating};"
-    for row in connection.cursor().execute(sql):
-        print(row)
-
-
 def scrape_site(response):
     records = []
     table_rows = response.find('tbody', attrs={'class': 'lister-list'}).find_all('tr')
@@ -57,3 +45,9 @@ def scrape_site(response):
         rating = float(movie.find('td', attrs={'class': 'ratingColumn imdbRating'}).strong.text)
         records.append((rank, title, release_date, rating))
     return records
+
+
+def save_scraped_data(connection, data):
+    sql = "INSERT INTO top250movies (rank, title, releaseDate, rating) VALUES (?,?,?,?);"
+    connection.cursor().executemany(sql, data)
+    connection.commit()
