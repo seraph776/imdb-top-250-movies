@@ -1,6 +1,6 @@
 <div id="top" align="center">
   
-Project Title
+IMDB Top 250 Movies  
 =============
 
 
@@ -12,13 +12,15 @@ Project Title
 ![GitHub issues](https://img.shields.io/github/issues-raw/seraph776/seraph776?color=red&style=for-the-badge&labelColor=grey&label=issues)
 ![GitHub](https://img.shields.io/github/license/seraph776/seraph776?color=blue&style=for-the-badge&labelColor=grey&label=License)
 
-![image](https://user-images.githubusercontent.com/72005563/196425880-841614ec-34e0-4ffd-8d55-d2d0e4d0cbd5.png)
+<img src="https://user-images.githubusercontent.com/72005563/196473344-9a5bf166-ab64-4e17-bdb2-520274b250b2.png" width="250">
 
 👩‍❤️‍💋‍👨 [Contribute](#how-to-contribute) · 🪳 [Report Bugz](https://github.com/seraph776/webscrape_template/issues/new) · 📫 [Contact me](#contact-me) · ☕[Buy me Coffee](https://www.buymeacoffee.com/seraph776) 
 
 _Show your support and give this repo a_ ⭐
 
 </div>  
+
+
 
 
 <details>
